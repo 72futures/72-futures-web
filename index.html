@@ -4,91 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>72 Futures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="assets/styles/global.css?v=2" />
+
+    <meta name="description"
+        content="Unlock your financial potential with astrological insights tailored for smarter money decisions. Align your stars and boost your wealth with 72 Futures.">
+    <meta name="keywords"
+        content="Astrology, Financial Planning, Wealth Management, Investment Advisors, Tax Professionals">
+    <meta name="author" content="72 Futures">
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+
+    
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Questa+Grande:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            text-align: center;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .container:nth-child(odd) {
-            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
         }
 
         h1 {
-            color: #333;
+            font-family: 'Questa Grande', serif;
         }
 
-        p {
-            color: #666;
+        .pramary-color {
+            color: #f15a29;
         }
 
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
+        .secondary-color {
+            color: #f9ad17;
         }
 
-        .button:hover {
-            background-color: #0056b3;
+        .section-bg {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/banner_image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-about-bg {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/about-us.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
     </style>
 
 
 
-    <script type="module" src="j.js"></script>
-    <script type="text/javascript">
-        window.onload = () => {
-            orufyBookings.InLineWidget();
-            orufyBookings.addIframeClickListener(); // Add click listener to iframe
-        };
-    </script>
-
 </head>
 
+<body class="bg-gray-900 text-white">
+    <header
+        class="absolute top-[50px] left-20 right-10 bg-transparent py-4 px-6 flex items-center justify-between z-50">
+        <div class="flex items-center">
+            <img src="assets/images/logo.svg" alt="72 Futures Logo" class="h-auto md:h-[80px] lg:h-[130px] w-auto">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="section-bg relative bg-gray-900 py-10 pt-32">
+        <div
+            class="container mx-auto flex flex-row flex-wrap md:flex-nowrap items-center justify-center gap-[20px] py-20 px-5">
+
+            <div class="w-full max-w-[500px] md:w-1/2 px-5">
+                <h1 class="text-5xl md:[font-size:60px] font-bold leading-tight text-white">
+                    Align your stars,<br /> boost your wealth
+                </h1>
+                <p class="mt-4 text-xl md:text-2xl text-white">
+                    Unlock your financial potential with astrological insights tailored for smarter money decisions.
+                </p>
+                <button
+                    class="w-full text-4xl mt-10 bg-[#f15a29] h text-white font-bold py-2 rounded-full border-2 border-[#f9ad17]">
+                    Book an appointment
+                </button>
+            </div>
+
+            <div class="w-full max-w-[500px] md:w-1/2 px-5">
+                <img src="assets/images/kundali.png" alt="Hero Image" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section class="section-about-bg p-10 md:px-20 py-20 overflow-hidden">
+        <div class="max-w-6xl mx-auto p-10">
+
+            <!-- Left Content -->
+            <div>
+                <!-- 70px -->
+                <h2 class="secondary-color md:text-5xl font-semibold mb-6">About Us </h2>
+
+                <!-- // 33px -->
+                <p class="text-lg leading-relaxed max-w-4xl">
+                    Our platform is built on the belief that true financial clarity comes from understanding both your
+                    finances and your stars.
+                    That’s why we’ve assembled a distinguished team of
+                    <span class="text-blue-300 underline">licensed financial advisors, certified planners, investment
+                        consultants, and tax professionals—each</span>
+                    with deep experience across personal finance, business strategy, and wealth planning.
+                </p>
 
 
 
+            </div>
 
-<body>
-    <!-- Section  -->
-    <div class="container">
-        <h1>Welcome to Our Landing Page</h1>
-        <p>Your journey starts here. Explore our services and offerings.</p>
-        <a href="#" class="button">Get Started</a>
-
-
-    </div>
-    <!-- Include the Orufy script -->
-    <!-- Add  -->
-    <div class="container">
-        <h2>Book Your Appointment</h2>
-        <div class="orufy-bookings-inline-widget"
-            data-access-link="/republic-tv?BackgroundColor=FFFFFF&TextColor=363942&ButtonColor=098666"></div>
-
-    </div>
+            <div class="py-20">
+                <!-- // 50px -->
+                <h3 class="secondary-color mt-10 text-2xl font-semibold">Our Experts Include:</h3>
+                <!-- // 25px -->
+                <ul class="list-disc pl-5 mt-4 space-y-2 text-base">
+                    <li>CFPs (Certified Financial Planners) for personalized financial roadmaps</li>
+                    <li>Chartered Accountants and CPAs for taxation and compliance</li>
+                    <li>Investment Advisors (SEBI-Registered/FINRA-certified) for smart portfolio growth</li>
+                    <li>Credit and Loan Specialists to help structure funding and debt responsibly</li>
+                </ul>
+            </div>
 
 
+        </div>
+    </section>
+
+    <!-- // 33px -->
+    <section class="section-about-bg p-10 md:px-20 py-20 overflow-hidden">
+        <div class="max-w-6xl mx-auto p-10 text-lg ">
+            <div class="py-20">
+                <p class="leading-relaxed">
+                    Our mission is to offer insightful, customized financial guidance rooted in both astrological
+                    analysis and real-world strategies. Whether you’re navigating career choices, planning
+                    investments, or overcoming financial blocks, we provide holistic solutions that align your
+                    financial goals with your cosmic blueprint. With a unique combination of astrology expertise,
+                    financial knowledge, and intuitive insight we empower:
+                </p>
+                <div class="py-20">
+                    <ul class="text-yellow-400  list-disc pl-10 mt-4 space-y-2 text-base">
+                        <li>Investment timing</li>
+                        <li>Business launch periods</li>
+                        <li>Major life event expenses</li>
+                        <li>Debt management and repayment strategies</li>
+                        <li>Abundance mindset and financial healing</li>
+                    </ul>
+                </div>
+                <div class="pt-2">
+                    <p>
+                        Whether you’re planning a big investment, starting a new venture,</p>
+                    <p> or simply looking to align your finances with your destiny,</p>
+                    <p> our integrated approach ensures every decision is both strategic and soul-aligned.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
