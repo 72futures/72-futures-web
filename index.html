@@ -49,6 +49,29 @@
             background-size: cover;
             background-position: center;
         }
+
+        .section-booking-bg {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/booking_background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        /* change backgroun image of mobile */
+        @media (max-width: 767px) {
+            .section-bg {
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/banner_image_mobile.png');
+            }
+
+            .section-about-bg {
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/about-us-mobile.png');
+            }
+
+            .section-booking-bg {
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/booking_background_mobile.png');
+            }
+        }
     </style>
 
 
@@ -60,7 +83,7 @@
         class="absolute top-[50px] md:left-20 left-10 right-10 bg-transparent py-4 px-6 flex items-center justify-between z-50">
         <div class="flex items-center">
             <img src="assets/images/logo.svg" alt="72 Futures Logo"
-            class="h-[80px] sm:h-[80px] md:h-[80px] lg:h-[80px] xl:h-[100px] w-auto">
+                class="h-[80px] sm:h-[80px] md:h-[80px] lg:h-[80px] xl:h-[100px] w-auto">
         </div>
     </header>
 
@@ -68,21 +91,23 @@
 
     <section class="section-bg relative bg-gray-900 py-10 pt-32">
         <div
-            class="container mx-auto flex flex-col-reverse md:flex-row flex-wrap md:flex-nowrap items-center justify-center gap-[20px] py-20 px-5">
+            class="container mx-auto flex flex-col-reverse md:flex-row md:flex-nowrap items-center justify-center gap-5 md:gap-10 py-20 px-5">
 
+            <!-- Left Content -->
             <div class="w-full max-w-[500px] md:w-1/2 px-5">
-                <h1 class="text-5xl md:[font-size:60px] font-bold leading-tight text-white">
-                    Align your stars,<br /> boost your wealth
+                <h1 class="text-4xl md:text-6xl font-semibold leading-tight text-white">
+                    Align your stars<br />boost your wealth
                 </h1>
-                <p class="mt-4 text-xl md:text-2xl text-white">
+                <p class="mt-4 text-lg md:text-2xl text-white">
                     Unlock your financial potential with astrological insights tailored for smarter money decisions.
                 </p>
                 <button
-                    class="w-full text-4xl mt-10 bg-[#f15a29] h text-white font-bold py-2 rounded-full border-2 border-[#f9ad17]">
+                    class="w-full text-2xl mt-10 bg-[#f15a29] text-white font-semibold py-3 rounded-full border-2 border-[#f9ad17] transition duration-300 hover:bg-[#e04e1f]">
                     Book an appointment
                 </button>
             </div>
 
+            <!-- Right Image -->
             <div class="w-full max-w-[500px] md:w-1/2 px-5">
                 <img src="assets/images/kundali.png" alt="Hero Image" class="w-full h-auto rounded-lg shadow-lg">
             </div>
@@ -161,18 +186,22 @@
         </div>
     </section>
 
-    <section class="section-about-bg p-10 md:px-20 py-20 overflow-hidden" id="book-appointment">
+    <section class="section-booking-bg  p-10 md:px-20 py-20 overflow-hidden" id="book-appointment">
 
-        <div class="max-w-6xl mx-auto p-10 items-center justify-between gap-10">
+        <div class="max-w-6xl mx-auto md:p-10 items-center justify-between gap-10">
 
             <!-- Left Content -->
-            <div class="text-center">
+            <div class="text-center w-full max-w-[900px] mx-auto mb-10">
                 <!-- 70px -->
                 <h2 class="secondary-color md:text-4xl font-semibold mb-6">Secure your financial future-schedule your
                     free consultation </h2>
+                <p class=" text-lg font-bold  bg-[#f9ad17] inline-block px-4 py-2 rounded-md shadow-md">
+                    Book your free 20-min consultation call
+                </p>
+
             </div>
 
-            <div class="w-full ">
+            <div class="w-full">
                 <link rel="stylesheet" href="https://orufybookings.com/external/widget.css" type="text/css"
                     media="all" />
                 <div style="height:100dvh" class="orufy-bookings-inline-widget"
@@ -187,7 +216,7 @@
     </section>
 
     <script>
-        document.querySelector('button').addEventListener('click', function() {
+        document.querySelector('button').addEventListener('click', function () {
             document.querySelector('#book-appointment').scrollIntoView({
                 behavior: 'smooth'
             });
