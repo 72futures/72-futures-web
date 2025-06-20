@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-family: 'Questa Grande', serif;
+}
+
+.heading_font {
+    font-family: 'Questa Grande', serif;
+}
+
+.pramary-color {
+    color: #f15a29;
+}
+
+.secondary-color {
+    color: #f9ad17;
+}
+
+.section-bg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/banner_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-about-bg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/about-us.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-booking-bg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/images/booking_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* change backgroun image of mobile */
+@media (max-width: 767px) {
+    .section-bg {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/banner_image_mobile.png');
+    }
+
+    .section-about-bg {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/about-us-mobile.png');
+    }
+
+    .section-booking-bg {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/booking_background_mobile.png');
+    }
+}
